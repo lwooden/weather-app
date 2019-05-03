@@ -1,0 +1,64 @@
+/* h1 {
+    color: blue;
+} */
+
+.portrait {
+    width: 250px; /* changes the height of the image proportionately so it doesn't stretch */
+}
+
+input {
+    border: 1px solid;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid;
+    /* border-radius: 25px; */
+    background: grey;
+    color: white;
+    padding: 8px;
+
+    
+}
+
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    max-width: 650px;
+    margin: 0 auto;   /* the space outside of an element */
+    padding: 0 16px; /* the space inside of an element */
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* vh = view port height; the height of the browser */
+}
+
+.main-content {
+    flex-grow: 1;
+
+}
+
+footer {
+    color: rgb(110, 110, 110);
+    border-top: 1px solid black;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+header a {
+    margin-right: 16px;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
