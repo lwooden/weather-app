@@ -11,6 +11,7 @@ const weatherForm = document.querySelector('form') // select the "form" element 
 const searchTerm = document.querySelector('input') // select the "input" element from the "form" element on the HTML page after the user submits
 const messageOne = document.querySelector('#messageOne')
 const messageTwo = document.querySelector('#messageTwo')
+const test = 'This is a test'
 
 weatherForm.addEventListener('submit',(e) => { // add a listerner event on the "form" element
     e.preventDefault() // prevent the default submit behavior from refreshing the page immediately after submission
