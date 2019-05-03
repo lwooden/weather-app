@@ -22,6 +22,10 @@ hbs.registerPartials(pathToPartials) // define the path for handlebars to look f
 
 app.use(express.static(pathToPublic))
 
+// if application is launced on Heroku, port will be picked up from the env variable.
+// if applicaiton is launced locally, the env part will fail so fall back to 3000 as our value
+const port = process.env.PORT || 3000
+
 
 app.get('', (req, res) => {
     res.render('index', {
@@ -122,6 +126,6 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(3000, () => {
-    console.log('Listening on port 3000')
+app.listen(port, () => {
+    console.log('Listening on port' + port)
 })
