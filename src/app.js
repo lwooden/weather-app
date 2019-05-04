@@ -12,7 +12,7 @@ const app = express()
 const pathToPublic = path.join(__dirname,'../public') 
 const pathToViews = path.join(__dirname,'../templates/views')
 const pathToPartials = path.join(__dirname,'../templates/partials')
-console.log(pathToPartials)
+//console.log(pathToPartials)
 
 
 app.set('view engine', 'hbs') // configuration to use handlebars
