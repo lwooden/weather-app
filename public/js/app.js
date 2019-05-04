@@ -21,7 +21,8 @@ weatherForm.addEventListener('submit',(e) => { // add a listerner event on the "
     messageOne.textContent ='Loading...'
     messageTwo.textContent = ''
 
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    // cut out the domain entirely so that the app can run no matter what server Heroku provisions on
+    fetch('/weather?address=' + location).then((response) => {
         
         response.json().then((data) => {
             if (data.error) {
